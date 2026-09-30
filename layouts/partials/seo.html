@@ -1,0 +1,16 @@
+<meta name="description" content="{{ .Params.summary | default .Site.Params.description }}">
+<meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+<meta property="og:type" content="{{ if .IsPage }}book{{ else }}website{{ end }}">
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": {{ .Title | jsonify }},
+  "author": { "@type": "Person", "name": {{ .Site.Params.author | jsonify }} },
+  "isbn": {{ .Params.isbn | jsonify }},
+  "description": {{ .Params.summary | jsonify }},
+  "offers": { "@type": "Offer", "price": {{ .Params.price | jsonify }}, "priceCurrency": "EUR" }
+}
+</script>
+{{ end }}

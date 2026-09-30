@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article>
+  <h2>{{ .Title }}</h2>
+  <p><strong>Auteur :</strong> {{ .Site.Params.author }} | <strong>ISBN :</strong> {{ .Params.isbn }}</p>
+  <hr>
+  <div>{{ .Content }}</div>
+  <p><a href="{{ .Params.buy_link }}" class="btn" target="_blank">Acheter l' ouvrage</a></p>
+</article>
+{{ end }}

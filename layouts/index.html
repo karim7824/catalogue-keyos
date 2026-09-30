@@ -1,0 +1,51 @@
+{{ define "main" }}
+<section style="text-align: center; padding: 2rem 1rem; background: #f0efe6; border-radius: 8px; margin-bottom: 2rem;">
+    <h2>Bienvenue sur Keyos Éditions</h2>
+    <p>Découvrez nos livres techniques, master supports et guides e-learning pour développeurs et experts IT.</p>
+</section>
+
+<section id="recherche" style="margin-bottom: 2rem;">
+    <input type="text" id="searchInput" placeholder="🔍 Rechercher par titre, techno, niveau, ISBN..." 
+           style="width: 100%; padding: 12px; font-size: 16px; border: 2px solid #6e6a0d; border-radius: 6px; box-sizing: border-box;">
+</section>
+
+<section>
+    <h3>Catalogue complet</h3>
+    <div id="bookGrid" class="grid">
+        {{ range where .Site.RegularPages "Section" "livres" }}
+        <div class="card book-item" 
+             data-title="{{ .Title | lower }}" 
+             data-summary="{{ .Params.summary | lower }}" 
+             data-category="{{ .Params.category | lower }}"
+             data-isbn="{{ .Params.isbn | lower }}">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p><strong>Niveau :</strong> {{ .Params.level | default "Tous niveaux" }} | <strong>Catégorie :</strong> {{ .Params.category }}</p>
+            <p>{{ .Params.summary }}</p>
+            <p><strong>Prix :</strong> {{ .Params.price }} €</p>
+            <a href="{{ .RelPermalink }}" class="btn">Voir la fiche</a>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+<script>
+document.getElementById('searchInput').addEventListener('input', function(e) {
+    const query = e.target.value.toLowerCase().trim();
+    const books = document.querySelectorAll('.book-item');
+
+    books.forEach(book => {
+        const title = (book.getAttribute('data-title') || '').toLowerCase();
+        const summary = (book.getAttribute('data-summary') || '').toLowerCase();
+        const category = (book.getAttribute('data-category') || '').toLowerCase();
+        const isbn = (book.getAttribute('data-isbn') || '').toLowerCase();
+
+        // Vérification de la présence du terme recherché dans au moins un champ
+        if (title.includes(query) || summary.includes(query) || category.includes(query) || isbn.includes(query)) {
+            book.style.display = '';
+        } else {
+            book.style.display = 'none';
+        }
+    });
+});
+</script>
+{{ end }}

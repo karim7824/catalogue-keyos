@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  {{ partial "seo.html" . }}
+  <style>body{font-family:sans-serif;max-width:800px;margin:2rem auto;padding:0 1rem;color:#222;background:#fafafa}a{color:#6e6a0d}.btn{background:#6e6a0d;color:#fff;padding:8px 12px;border-radius:4px;text-decoration:none}</style>
+</head>
+<body>
+  <header><h1><a href="/">{{ .Site.Title }}</a></h1></header>
+  <main>{{ block "main" . }}{{ end }}</main>
+</body></html>

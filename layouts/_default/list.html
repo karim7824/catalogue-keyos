@@ -1,0 +1,10 @@
+{{ define "main" }}
+<h2>Catalogue des ouvrages</h2>
+{{ range where .Site.RegularPages "Section" "livres" }}
+  <div style="border:1px solid #ccc;padding:1rem;margin-bottom:1rem;background:#fff;">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Params.summary }}</p>
+    <p><strong>Prix :</strong> {{ .Params.price }} €</p>
+  </div>
+{{ end }}
+{{ end }}

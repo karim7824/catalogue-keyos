@@ -1,0 +1,7 @@
+baseURL = "https://partenaireditions.fr/"
+languageCode = "fr-fr"
+title = "Keyos Éditions - Catalogue"
+
+[params]
+  description = "Livres techniques et supports e-learning par Keyos Éditions."
+  author = "Karim Belhadj"

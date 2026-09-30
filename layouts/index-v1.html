@@ -1,0 +1,52 @@
+{{ define "main" }}
+<section style="text-align: center; padding: 2rem 0; background: #f0efe6; border-radius: 8px; margin-bottom: 2rem;">
+    <h2>Bienvenue sur Keyos Éditions</h2>
+    <p>Découvrez nos livres techniques, master supports et guides e-learning pour développeurs et experts IT.</p>
+    <a href="#recherche" class="btn">Rechercher un ouvrage</a>
+</section>
+
+<section id="recherche" style="margin-bottom: 2rem;">
+    <input type="text" id="searchInput" placeholder="🔍 Rechercher par titre, techno, niveau..." 
+           style="width: 100%; padding: 12px; font-size: 16px; border: 2px solid #6e6a0d; border-radius: 6px; box-sizing: border-box;">
+</section>
+
+<section>
+    <h3>Catalogue complet</h3>
+    <div id="bookGrid" class="grid">
+        {{ range where .Site.RegularPages "Section" "livres" }}
+        <div class="card book-item" 
+             data-title="{{ .Title | lower }}" 
+             data-summary="{{ .Params.summary | lower }}" 
+             data-category="{{ .Params.category | lower }}"
+             data-isbn="{{ .Params.isbn | lower }}">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p><strong>Niveau :</strong> {{ .Params.level | default "Tous niveaux" }} | <strong>Catégorie :</strong> {{ .Params.category }}</p>
+            <p>{{ .Params.summary }}</p>
+            <p><strong>Prix :</strong> {{ .Params.price }} €</p>
+            <a href="{{ .RelPermalink }}" class="btn">Voir la fiche</a>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Moteur de recherche instantané JS -->
+<script>
+document.getElementById('searchInput').addEventListener('keyup', function(e) {
+    const query = e.target.value.toLowerCase().strip();
+    const books = document.querySelectorAll('.book-item');
+
+    books.forEach(book => {
+        const title = book.getAttribute('data-title');
+        const summary = book.getAttribute('data-summary');
+        const category = book.getAttribute('data-category');
+        const isbn = book.getAttribute('data-isbn');
+
+        if (title.includes(query) || summary.includes(query) || category.includes(query) || isbn.includes(query)) {
+            book.style.display = 'block';
+        } else {
+            book.style.display = 'none';
+        }
+    });
+});
+</script>
+{{ end }}
