@@ -3,7 +3,7 @@ title: "Concepts et systaxe de la norme XSLT"
 date: 2026-09-30
 draft: false
 isbn: "XSLT-INIT"
-price: "5.00"
+price: "8.00"
 currency: "EUR"
 author: "BELHADJ Karim"
 category: "Langages"

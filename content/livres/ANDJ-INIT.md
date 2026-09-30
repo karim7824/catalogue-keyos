@@ -3,7 +3,7 @@ title: "Introduction à la programmation mobile Android/Java"
 date: 2026-09-30
 draft: false
 isbn: "ANDJ-INIT"
-price: "5.00"
+price: "8.00"
 currency: "EUR"
 author: "BELHADJ Karim"
 category: "Langages"
@@ -18,4 +18,4 @@ Comprendre par la pratique les concepts de bases de Android
 
 - **Public visé :** Programmeur et chef de projet
 - **Niveau :** Initiation
-- **Durée indicative :** 2 jour(s)
+- **Durée indicative :** 4 jour(s)

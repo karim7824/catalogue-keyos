@@ -3,7 +3,7 @@ title: "Administration d'un serveur Débian"
 date: 2026-09-30
 draft: false
 isbn: "DEBIAN-AVAN"
-price: "5.00"
+price: "8.00"
 currency: "EUR"
 author: "BELHADJ Karim"
 category: "systeme"
@@ -18,4 +18,4 @@ Administration les fonctionnalités principales d'un serveur Debian
 
 - **Public visé :** Administrateur système et réseaux
 - **Niveau :** avance
-- **Durée indicative :** 2 jour(s)
+- **Durée indicative :** 4 jour(s)
