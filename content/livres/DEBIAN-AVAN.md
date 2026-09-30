@@ -6,10 +6,10 @@ isbn: "DEBIAN-AVAN"
 price: "5.00"
 currency: "EUR"
 author: "BELHADJ Karim"
-category: "Langages"
+category: "systeme"
 level: "avance"
 summary: "Administration les fonctionnalités principales d'un serveur Debian"
-buy_link: "https://partenaireditions.fr/livres/catalogue?media=livres&edition=keyos-editions&categorie=langages&titre=DEBIAN-AVAN"
+buy_link: "https://partenaireditions.fr/livres/catalogue?media=livres&edition=keyos-editions&categorie=systeme&titre=DEBIAN-AVAN"
 ---
 
 ## À propos de cet ouvrage

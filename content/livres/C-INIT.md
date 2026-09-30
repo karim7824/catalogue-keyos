@@ -1,5 +1,5 @@
 ---
-title: "Caractéristiques du langage"
+title: "Introduction à la programmation en C"
 date: 2026-09-30
 draft: false
 isbn: "C-INIT"

@@ -7,7 +7,7 @@ price: "5.00"
 currency: "EUR"
 author: "BELHADJ Karim"
 category: "Langages"
-level: "Avancé"
+level: "avance"
 summary: "Bien maîtriser les concepts avancés de Java"
 buy_link: "https://partenaireditions.fr/livres/catalogue?media=livres&edition=keyos-editions&categorie=langages&titre=JAVA-AVAN"
 ---
@@ -17,5 +17,5 @@ buy_link: "https://partenaireditions.fr/livres/catalogue?media=livres&edition=ke
 Bien maîtriser les concepts avancés de Java
 
 - **Public visé :** Programmeur et chef de projet
-- **Niveau :** Avancé
+- **Niveau :** avance
 - **Durée indicative :** 2 jour(s)
