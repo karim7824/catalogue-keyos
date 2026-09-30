@@ -3,7 +3,7 @@ title: "Programmation avancée en C#"
 date: 2026-09-30
 draft: false
 isbn: "CS-AVAN"
-price: "5.00"
+price: "8.00"
 currency: "EUR"
 author: "BELHADJ Karim"
 category: "Langages"
@@ -18,4 +18,4 @@ Bien maîtrise la programmation des MFC en C#
 
 - **Public visé :** Programmeur et chef de projet
 - **Niveau :** Initiation
-- **Durée indicative :** 2 jour(s)
+- **Durée indicative :** 4 jour(s)

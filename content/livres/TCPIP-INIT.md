@@ -3,13 +3,13 @@ title: "Introduction aux concepts TCP/IP et mise en oeuvre"
 date: 2026-09-30
 draft: false
 isbn: "TCPIP-INIT"
-price: "5.00"
+price: "8.00"
 currency: "EUR"
 author: "BELHADJ Karim"
-category: "Langages"
+category: "reseaux"
 level: "Initiation"
 summary: "Des concepts réseaux TCP/IP à la mise en oeuvre"
-buy_link: "https://partenaireditions.fr/livres/catalogue?media=livres&edition=keyos-editions&categorie=langages&titre=TCPIP-INIT"
+buy_link: "https://partenaireditions.fr/livres/catalogue?media=livres&edition=keyos-editions&categorie=reseaux&titre=TCPIP-INIT"
 ---
 
 ## À propos de cet ouvrage

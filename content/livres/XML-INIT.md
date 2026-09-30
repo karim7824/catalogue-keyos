@@ -3,7 +3,7 @@ title: "Concepts et systaxe de la norme XML"
 date: 2026-09-30
 draft: false
 isbn: "XML-INIT"
-price: "5.00"
+price: "8.00"
 currency: "EUR"
 author: "BELHADJ Karim"
 category: "Langages"
@@ -18,4 +18,4 @@ Utilisation effication de XML dans le format de données et vos applications
 
 - **Public visé :** Programmeur et chef de projet
 - **Niveau :** Initiation
-- **Durée indicative :** 2 jour(s)
+- **Durée indicative :** 3 jour(s)

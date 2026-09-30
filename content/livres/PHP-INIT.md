@@ -3,7 +3,7 @@ title: "Introduction à la programmation Php"
 date: 2026-09-30
 draft: false
 isbn: "PHP-INIT"
-price: "5.00"
+price: "8.00"
 currency: "EUR"
 author: "BELHADJ Karim"
 category: "Langages"

@@ -3,7 +3,7 @@ title: "Introduction à la programmation en C"
 date: 2026-09-30
 draft: false
 isbn: "C-INIT"
-price: "5.00"
+price: "8.00"
 currency: "EUR"
 author: "BELHADJ Karim"
 category: "Langages"
@@ -18,4 +18,4 @@ Comprendre la syntaxe de bases du langage C
 
 - **Public visé :** Programmeur et chef de projet
 - **Niveau :** Initiation
-- **Durée indicative :** 2 jour(s)
+- **Durée indicative :** 3 jour(s)
